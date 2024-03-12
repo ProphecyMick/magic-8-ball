@@ -52,8 +52,7 @@ function getNextAnswer() {
     return answer;
 }
 
-// Event listener for clicks on the window to show random Magic 8 Ball answers
-window.addEventListener('click', () => {
+function handleInteraction() {
     const container = document.getElementById('scene-container');
     container.classList.add('shake');
     // Clear the previous answer at the start of the shake
@@ -65,4 +64,8 @@ window.addEventListener('click', () => {
         const answer = getNextAnswer();
         document.getElementById('magic8BallAnswer').innerText = answer;
     }, 500); // This duration should match the total duration of the shake animation
-});
+}
+
+// Listen for both click and touch events
+window.addEventListener('click', handleInteraction);
+window.addEventListener('touchstart', handleInteraction);
