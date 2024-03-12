@@ -9,6 +9,8 @@
     position: relative;
     width: 100%;
     height: 80vh; /* Adjust based on your needs */
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* To avoid the tap highlight color */
 }
 
 #scene-container {
