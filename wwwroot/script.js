@@ -24,7 +24,7 @@ scene.background = new THREE.Color(0xCCCCCC); // Set a light grey background, fo
 animate();
 
 // Magic 8 Ball answers array
-const answers = ["Parrot Emergency", "Driving to an \n appointment", "/facepalm", "Tornado incoming"];
+const answers = ["Parrot Emergency", "Driving to an \n appointment", "/facepalm", "Tornado incoming", "Stepped on an \n iguana"];
 
 // Event listener for clicks on the window to show random Magic 8 Ball answers
 window.addEventListener('click', () => {
